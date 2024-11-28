@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+@use '@angular/material' as mat;
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; font-size: 15px; }
+
+.padding-layout{
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+mat-card-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #bfc5e1;
+}
+
+mat-card{
+  background-color: lightgrey;
+}

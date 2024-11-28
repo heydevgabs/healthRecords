@@ -1,0 +1,16 @@
+<mat-card>
+ <div class="padding-layout">
+   <mat-card-title>Search Record by Code</mat-card-title>
+ </div>
+  <mat-card-content>
+    <mat-form-field appearance="outline" style="width: 100%;">
+      <mat-label>Enter Code</mat-label>
+      <input matInput type="text" [(ngModel)]="searchCode"  placeholder="e.g., 12345"/>
+    </mat-form-field>
+    <button mat-raised-button color="accent" (click)="searchRecord()">Search</button>
+    <p *ngIf="message" style="margin-top: 16px;">{{ message }}</p>
+    <pre *ngIf="record">{{ record | json }}</pre>
+  </mat-card-content>
+</mat-card>
+
+

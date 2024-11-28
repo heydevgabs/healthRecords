@@ -1,0 +1,12 @@
+<mat-card class="delete-card">
+  <mat-card-title class="center-title">Delete All Records</mat-card-title>
+  <mat-card-content>
+    <div class="action-container">
+      <button mat-raised-button color="warn" (click)="deleteRecords()">Delete Records</button>
+    </div>
+    <div class="message-container" *ngIf="message">
+      <mat-divider></mat-divider>
+      <p class="success-message">{{ message }}</p>
+    </div>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,18 @@
+<mat-card class="upload-card">
+  <mat-card-title>Upload File</mat-card-title>
+  <mat-card-content>
+    <div class="upload-container">
+      <button mat-raised-button color="accent" (click)="fileInput.click()">Choose File</button>
+      <span *ngIf="selectedFile">{{ selectedFile.name }}</span>
+      <input #fileInput type="file" (change)="onFileSelected($event)" hidden />
+    </div>
+    <div class="upload-actions">
+      <button mat-raised-button color="primary" (click)="uploadFile()" [disabled]="!selectedFile">
+        Upload
+      </button>
+    </div>
+    <div *ngIf="message" class="upload-message">
+      {{ message }}
+    </div>
+  </mat-card-content>
+</mat-card>
