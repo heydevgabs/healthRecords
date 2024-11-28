@@ -161,3 +161,38 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Node.js (Angular)
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.angular/
+
+
+# Compiled TypeScript
+*.tsbuildinfo
+
+# Angular specific
+*.d.ts
+*.js
+*.js.map
+*.map
+*.ngsummary.json
+*.ngfactory.ts
+*.ngstyle.ts
+*.sass.js
+*.scss.js
+# Generated Angular CLI files
+coverage/
+.idea/
+.eslintcache
+
+# Logs
+logs/
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
