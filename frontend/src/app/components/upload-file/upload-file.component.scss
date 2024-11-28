@@ -1,0 +1,33 @@
+.upload-card {
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f6f8; // Neutral gray background
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+mat-card-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #a1cdf4; // Material blue for title
+}
+
+.upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px; // Space between the file button and file name
+  margin: 20px 0;
+}
+
+.upload-actions {
+  margin-top: 20px;
+}
+
+.upload-message {
+  margin-top: 20px;
+  color: green; // Success message color
+  font-weight: bold;
+}
